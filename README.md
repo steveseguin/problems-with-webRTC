@@ -1,7 +1,9 @@
+# Problems with webRTC
+A collection of issues limiting webRTC's adoption
+
 * Increasing playout buffer delay does not improve quality at all or very little
     * This is a huge issue.
     * It does increase the delay, but not the quality
-
     
 * H265 playback support in Chrome. 
     * Nvidia Jetson / iPhone can output H265 to WebRTC, but Chrome can't seem to play it back. 
