@@ -1,15 +1,6 @@
 # Problems with webRTC
 A collection of issues limiting webRTC's adoption, specifically with a focus on video production
 
-* Increasing playout buffer delay does not improve quality at all or very little
-    * This is a huge issue.
-    * It does increase the delay, but not the quality
-    * It's hard to reproduce synthentically, and it might have been improved actually in recent versions of Chrome?
-
-* Changing play out buffer doesn't give control of underlying buffer ; just adds more. Makes play out quite variable
-   * Changing buffer of video impacts audios buffer; not independent
-   * Can't lower buffer or limit size for low latency
-   * I need to retest this, as its been a while 
     
 * Switching to TURN fixes issues with bitrate with ~5% of users
     * Doesn't auto switch
@@ -79,13 +70,24 @@ A collection of issues limiting webRTC's adoption, specifically with a focus on 
 * Chrome gets stuck at 35 kbps from time to time; restart fixes it, but just for a few minutes.
    * this issue used to happen a lot more often than it does now
 
+* Increasing playout buffer delay does not improve quality at all or very little
+    * This is a huge issue. (or was?)
+    * It does increase the delay, but not the quality
+    * It's hard to reproduce synthentically, and it might have been improved actually in recent versions of Chrome?
+    * Changes to chrome lately have resulted in a near zero jitter buffer? I'm a bit confused now
 
+* Changing play out buffer doesn't give control of underlying buffer ; just adds more. Makes play out quite variable
+   * Changing buffer of video impacts audios buffer; not independent
+   * Can't lower buffer or limit size for low latency
+   * I need to retest this, as its been a while. Increasing the playout hint delay isn't increasing the jitter buffer anymore, but the video still is delayed?
+   * .. something changed recently. :: confused ::
 
-* PCM has no FEC? Lots of clicking
+* PCM has no FEC? Lots of clicking? 
+   *  I might just not have this working right.
 
-
-* PCM doesn't support 48khz stereo just 32khz
-
+* PCM doesn't support 48khz stereo; just 32khz.
+   *  48khz is supported with mono
+   *  minor issue really
 
 * MP4 recording options missing
    * webm support with OPUS, maybe PCM, but most users can't convert
