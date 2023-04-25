@@ -1,5 +1,5 @@
 # Problems with webRTC
-A collection of issues limiting webRTC's adoption
+A collection of issues limiting webRTC's adoption, specifically with a focus on video production
 
 * Increasing playout buffer delay does not improve quality at all or very little
     * This is a huge issue.
