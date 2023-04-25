@@ -1,6 +1,7 @@
 # Problems with webRTC
 A collection of issues limiting webRTC's adoption, specifically with a focus on video production
 
+I'd like to note that some of these issues may have been resolved in more recent Chromium updates; some retesting is needed to confirm
     
 * Switching to TURN fixes issues with bitrate with ~5% of users
     * Doesn't auto switch
