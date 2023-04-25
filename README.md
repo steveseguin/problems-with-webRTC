@@ -4,18 +4,12 @@ A collection of issues limiting webRTC's adoption, specifically with a focus on 
 * Increasing playout buffer delay does not improve quality at all or very little
     * This is a huge issue.
     * It does increase the delay, but not the quality
-
-```
-# 4 second buffer delay test links, 
-view: https://vdo.ninja/?buffer=4000&view=BufferTest123&stats
-publish: https://vdo.ninja/?push=BufferTest123&stats
-```
-
-update: .. wait. ha, has this been improved? It's working better in testing now that a few months ago.
+    * It's hard to reproduce synthentically, and it might have been improved actually in recent versions of Chrome?
 
 * Changing play out buffer doesn't give control of underlying buffer ; just adds more. Makes play out quite variable
    * Changing buffer of video impacts audios buffer; not independent
    * Can't lower buffer or limit size for low latency
+   * I need to retest this, as its been a while 
     
 * Switching to TURN fixes issues with bitrate with ~5% of users
     * Doesn't auto switch
