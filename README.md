@@ -77,11 +77,18 @@ I'd like to note that some of these issues may have been resolved in more recent
     * It's hard to reproduce synthentically, and it might have been improved actually in recent versions of Chrome?
     * Changes to chrome lately have resulted in a near zero jitter buffer? I'm a bit confused now
 
+    Test setup for the above (assuming you also are employing lag + drop + out of order packet network distortion)
+    ```
+    publish: https://dev.versus.cam/evarate123/?view=57NXtzg&relay
+    Play with 5s buffer: https://vdo.ninja/alpha/?view=57NXtzg&buffer=5000&relay
+    Play with 100ms buffer: https://vdo.ninja/alpha/?view=57NXtzg&buffer=100&relay
+    Play with no buffer: https://vdo.ninja/alpha/?view=57NXtzg&relay
+    ```
+
 * Changing play out buffer doesn't give control of underlying buffer ; just adds more. Makes play out quite variable
    * Changing buffer of video impacts audios buffer; not independent
    * Can't lower buffer or limit size for low latency
    * I need to retest this, as its been a while. Increasing the playout hint delay isn't increasing the jitter buffer anymore, but the video still is delayed?
-   * .. something changed recently. :: confused ::
 
 * PCM has no FEC? Lots of clicking? 
    *  I might just not have this working right.
