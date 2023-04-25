@@ -6,8 +6,9 @@ A collection of issues limiting webRTC's adoption, specifically with a focus on 
     * It does increase the delay, but not the quality
 
 ```
-https://vdo.ninja/alpha/?buffer=1000&view=BufferTest123&stats
-https://vdo.ninja/alpha/?push=BufferTest123&stats
+# 4 second buffer delay test links, 
+view: https://vdo.ninja/alpha/?buffer=4000&view=BufferTest123&stats
+publish: https://vdo.ninja/alpha/?push=BufferTest123&stats
 ```
 
 * Changing play out buffer doesn't give control of underlying buffer ; just adds more. Makes play out quite variable
