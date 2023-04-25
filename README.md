@@ -11,6 +11,8 @@ view: https://vdo.ninja/?buffer=4000&view=BufferTest123&stats
 publish: https://vdo.ninja/?push=BufferTest123&stats
 ```
 
+update: .. wait. ha, has this been improved? It's working better in testing now that a few months ago.
+
 * Changing play out buffer doesn't give control of underlying buffer ; just adds more. Makes play out quite variable
    * Changing buffer of video impacts audios buffer; not independent
    * Can't lower buffer or limit size for low latency
