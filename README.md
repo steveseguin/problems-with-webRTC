@@ -107,6 +107,7 @@ I'd like to note that some of these issues may have been resolved in more recent
 * FFMpeg.js requires shared array / strict same origin, making it inaccessible
    * can't easily use it in browser to do remuxing into different pages or audio conversion
 
+* Safari doesn't announce when a webrtc connection drops / ends / closes, so the peer continues to hold the connection open until there is a manual time out due to lack of ping or something.  (Haven't tested this in several months tho)
 
 * No transparency support; webcam, transmission, or playback. WebM supports it though. Vtubers and green screens need it.
    * can't playback webRTC with alpha channels
