@@ -115,6 +115,18 @@ I'd like to note that some of these issues may have been resolved in more recent
    * stereo channel only with getUserMedia
    * 5.1 channel output mixing is hard to control; each 5.1 playback device handles it differently
    
+* PCM stereo 2.0 audio only supports 32khz; not 44.1 or 48. `&audiocodec=pcm`
+
+* Multi channel audio capture doesn't seem to work in Chrome ?
+
+* Multi channel audio playback up mixes into non-discrete channels with most multi channel audio output sources
+
+* Surround sound headsets (logitech/corsair) cause Chrome to not work with webrtc audio playback
+
+* 32-bit audio playback devices browsers to not playback webRTC audio
+
+* 110db resonance audio distortion peaks appear with PCM / OPUS audio via Chrome; less so with Firefox
+
 * No ASIO audio support by the browser
 
 * More open source background removal AI models needed; hard to compete with tech giants
