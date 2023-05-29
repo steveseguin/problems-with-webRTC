@@ -68,6 +68,7 @@ I'd like to note that some of these issues may have been resolved in more recent
     * This could open up the option of p2p2p
     * Transcoding lowers quality and uses a lot of CPU
        
+* iOS devices force webKIT (safari) on pretty much all webviews and browsers, so there is no Chromium / Firefox option in reality
 
 * Chrome gets stuck at 35 kbps from time to time; restart fixes it, but just for a few minutes.
    * this issue used to happen a lot more often than it does now
