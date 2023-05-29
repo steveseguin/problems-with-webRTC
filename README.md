@@ -5,7 +5,7 @@ I'd like to note that some of these issues may have been resolved in more recent
     
 * Switching to TURN fixes issues with bitrate with ~5% of users
     * Doesn't auto switch
-    * Not clear why this happens; peer to peer Internet routing issues; UDP throttling?
+    * Not clear why this happens; peer to peer Internet routingf issues; UDP throttling?
     * Seems to work for a second, then drops down to very low bitrates|
     * Adds a lot of cost to professional deployments where quality is important to paying customers
       
@@ -38,6 +38,7 @@ I'd like to note that some of these issues may have been resolved in more recent
 * No USB audio on Chrome Android or flutter
     * Chrome mobile and Flutter do not support USB audio sources
     * Forces custom native apps that are not accessible to most developers
+    * Firefox supports USB audio on mobile though?
 
 * No USB video at all in Flutter or mobile browser
     * USB video support (HDMI to USB, Webcams, etc) 
