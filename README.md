@@ -146,3 +146,5 @@ I'd like to note that some of these issues may have been resolved in more recent
 * No way to control hardware encoder or check if available; forcing openh264 works
 
 * Hardware encoder in windows don't really reduce CPU load. Openh264 lower cpu than the hardware encoder
+
+* can't open a window at a specific resolution in Chrome; it opens to only 'roughly' the right resolution. Makes screen sharing at 720p fixed size not feasible.
