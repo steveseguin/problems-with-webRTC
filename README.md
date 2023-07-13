@@ -150,3 +150,5 @@ I'd like to note that some of these issues may have been resolved in more recent
 * can't open a window at a specific resolution in Chrome; it opens to only 'roughly' the right resolution. Makes screen sharing at 720p fixed size not feasible.
 
 * Firefox does not support AV1 via webRTC, even as a viewer
+
+* some users have reported the desire for B-frame support
