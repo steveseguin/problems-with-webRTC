@@ -148,3 +148,5 @@ I'd like to note that some of these issues may have been resolved in more recent
 * Hardware encoder in windows don't really reduce CPU load. Openh264 lower cpu than the hardware encoder
 
 * can't open a window at a specific resolution in Chrome; it opens to only 'roughly' the right resolution. Makes screen sharing at 720p fixed size not feasible.
+
+* Firefox does not support AV1 via webRTC, even as a viewer
