@@ -90,7 +90,7 @@ Other issues are possibly perhaps  due to ignorance or error on my part, but I'm
     * Having something like this being standard would be very helpful
 
 * Cant change encoding presets in Browser like you can in OBS
-    * increasing color depth would be nice
+    * increasing color depth would be nice (vp9 might have an 8 v 10bit mode; av1 is decent, but need moree)
     * slower encoding presets to achieve better efficiency would be nice
     * maximum quality allowed is limited, blocking access to high bitrates
 
